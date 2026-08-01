@@ -1,8 +1,16 @@
 aid: upstart
 name: Upstart
-description: 'Upstart is a company surfaced as a portfolio company of first-round-capital, gv, khosla-ventures
-  and added to the API Evangelist network as a stub for enrichment. Sector: fintech. This profile is a
-  lead awaiting the enrichment pipeline.'
+description: >-
+  Upstart is an AI lending marketplace (NASDAQ: UPST) that connects consumers
+  with banks and credit unions, using AI-driven underwriting models to price
+  credit beyond traditional FICO-based scoring. The marketplace offers personal
+  loans, car loan refinancing, debt consolidation, home equity lines of credit,
+  and short-term relief loans - loans are originated by regulated bank and
+  credit-union partners, including lender-branded powered-by-Upstart sites.
+  Upstart's API surface is partner-facing rather than public: a Reporting API
+  for lending partners is operated at api.upstart.com and publicly tracked on
+  status.upstart.com, but no public developer portal or API documentation is
+  published.
 url: https://raw.githubusercontent.com/api-evangelist/upstart/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,13 +20,47 @@ x-backed-by:
 - khosla-ventures
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
+image: https://d1cy3c0knche0o.cloudfront.net/static/hero_social_thumbnail.jpg
 tags:
 - Company
 - Fintech
-apis: []
+- Lending
+- Credit
+- Artificial Intelligence
+- Personal Loans
+- Banking
+- Marketplace
+apis:
+- name: Upstart Reporting API
+  description: >-
+    Partner-facing reporting API for Upstart's bank and credit-union lending
+    partners. Not publicly documented - its existence and availability are
+    publicly evidenced by the "Reporting API" component on Upstart's status
+    page (live since 2021-03-16) and the api.upstart.com host, which serves
+    Upstart's security.txt. Access is limited to Upstart lending partners.
+  humanURL: https://www.upstart.com/lenders
+  baseURL: https://api.upstart.com
+  tags:
+  - Lending
+  - Reporting
+  - Partner API
+  properties:
+  - type: StatusPage
+    url: https://status.upstart.com
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
@@ -27,3 +69,40 @@ maintainers:
 common:
 - type: Website
   url: https://www.upstart.com
+- type: Blog
+  url: https://www.upstart.com/learn/
+- type: Support
+  url: https://upstarthelp.upstart.com/
+- type: Login
+  url: https://www.upstart.com/login
+- type: TermsOfService
+  url: https://www.upstart.com/terms
+- type: PrivacyPolicy
+  url: https://www.upstart.com/privacy_policy
+- type: GitHubOrganization
+  url: https://github.com/teamupstart
+- type: StatusPage
+  url: https://status.upstart.com
+- type: Lifecycle
+  url: lifecycle/upstart-lifecycle.yml
+- type: TrustCenter
+  url: https://trust.upstart.com/
+- type: Security
+  url: https://www.upstart.com/lenders/regulatory-compliance/vulnerability-reporting/
+- type: VulnerabilityDisclosure
+  url: security/upstart-vulnerability-disclosure.yml
+- type: SecurityTxt
+  url: well-known/upstart-security.txt
+- type: WellKnown
+  url: well-known/upstart-well-known.yml
+- type: DomainSecurity
+  url: security/upstart-domain-security.yml
+- type: Conformance
+  url: conformance/upstart-conformance.yml
+- type: LLMsTxt
+  url: llms/upstart-llms.txt
+x-enrichment:
+  date: '2026-07-21'
+  status: enriched
+  artifacts_added: 8
+  pass: local-v1

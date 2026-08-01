@@ -1,0 +1,31 @@
+generated: '2026-07-21'
+method: derived
+source: live probes of upstart.com surfaces (well-known/, security/) - no public API contract exists to assess API-level standards
+description: >-
+  Standards conformance observed on Upstart's public surface. Upstart's lending
+  APIs are partner-only with no published OpenAPI or developer documentation,
+  so API-level standards (OAuth2/OIDC, JSON:API, RFC 9457, pagination,
+  idempotency) cannot be assessed from a contract. What is verifiable is the
+  web/security posture below.
+standards:
+  - id: rfc9116-security-txt
+    conforms: true
+    evidence: >-
+      /.well-known/security.txt served on www.upstart.com and api.upstart.com
+      (saved at well-known/upstart-security.txt); note the Expires field is
+      stale (2025-09-01).
+  - id: dnssec
+    conforms: true
+    evidence: upstart.com zone is DNSSEC-signed (security/upstart-domain-security.yml probe)
+  - id: dmarc-reject
+    conforms: true
+    evidence: DMARC record present with p=reject (security/upstart-domain-security.yml probe)
+  - id: tls13-hsts
+    conforms: true
+    evidence: www.upstart.com serves TLSv1.3 with HSTS max-age=31536000
+  - id: oauth2
+    conforms: null
+    evidence: not assessable - no public API contract or auth documentation published
+  - id: rfc9457-problem-details
+    conforms: null
+    evidence: not assessable - no public API contract published

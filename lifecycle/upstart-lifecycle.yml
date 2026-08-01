@@ -1,0 +1,29 @@
+generated: '2026-07-21'
+method: searched
+source: https://status.upstart.com
+description: >-
+  Operational lifecycle surface for Upstart. Upstart runs a public Atlassian
+  Statuspage at status.upstart.com (verified live via the Statuspage v2 JSON
+  API, page id 8pzdr4hlm8sz, "All Systems Operational" at probe time) covering
+  two components: the upstart.com personal-loans product (including branded
+  powered-by-Upstart sites) and a partner-facing "Reporting API" (component
+  live since 2021-03-16). No public API versioning policy, deprecation policy,
+  Sunset/Deprecation header documentation, or SLA page was found - the lending
+  platform APIs are partner-only and their contract terms are not published.
+status_page: https://status.upstart.com
+status_page_platform: Atlassian Statuspage
+status_api: https://status.upstart.com/api/v2/status.json
+status_feeds:
+  - https://status.upstart.com/history.atom
+  - https://status.upstart.com/history.rss
+components:
+  - name: upstart.com
+    description: upstart.com personal loans product including branded powered by upstart sites
+    since: '2019-10-16'
+  - name: Reporting API
+    description: Partner-facing reporting API (no public documentation)
+    since: '2021-03-16'
+versioning: null
+deprecation: null
+sla: null
+deprecated_operations: []

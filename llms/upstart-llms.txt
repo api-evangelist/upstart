@@ -1,0 +1,22 @@
+User-agent: GPTBot
+Disallow: /login
+Disallow: /account/
+Disallow: /funding_form
+Disallow: /i/
+Disallow: /admin/
+
+User-agent: PerplexityBot
+Disallow: /login
+Disallow: /account/
+Disallow: /funding_form
+
+User-agent: ClaudeBot
+Disallow: /login
+Disallow: /account/
+Disallow: /funding_form
+
+# Default policy: Allow evergreen content
+User-agent: *
+Allow: /
+
+Sitemap: https://www.upstart.com/sitemap.xml

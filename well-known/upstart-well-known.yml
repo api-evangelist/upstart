@@ -1,0 +1,45 @@
+generated: '2026-07-21'
+method: searched
+description: >-
+  Results of probing the /.well-known/ discovery surface for the Upstart hosts
+  (www.upstart.com from apis.yml Website, plus the live api.upstart.com host
+  named by the status-page "Reporting API" component). Status is the HTTP code
+  observed at fetch time. www.upstart.com returns real 404s for unknown paths
+  (soft-404 checked), so 200s are genuine documents. The provider also serves a
+  file at /llms.txt, but its content is an AI-crawler access policy in
+  robots.txt format (GPTBot/PerplexityBot/ClaudeBot directives), not the
+  llms.txt link-index format - saved verbatim under llms/.
+hosts:
+  - host: https://www.upstart.com
+    documents:
+      - path: /.well-known/security.txt
+        status: 200
+        type: text/plain
+        file: upstart-security.txt
+      - path: /.well-known/openid-configuration
+        status: 404
+      - path: /.well-known/oauth-authorization-server
+        status: 404
+      - path: /.well-known/api-catalog
+        status: 404
+      - path: /.well-known/ai-plugin.json
+        status: 404
+      - path: /llms.txt
+        status: 200
+        type: text/plain
+        note: AI-crawler policy in robots format, saved verbatim as llms/upstart-llms.txt
+      - path: /robots.txt
+        status: 200
+  - host: https://api.upstart.com
+    documents:
+      - path: /.well-known/security.txt
+        status: 200
+        note: same RFC 9116 document as www (Canonical points at www.upstart.com)
+      - path: /.well-known/openid-configuration
+        status: 404
+      - path: /.well-known/oauth-authorization-server
+        status: 404
+      - path: /.well-known/api-catalog
+        status: 404
+      - path: /.well-known/ai-plugin.json
+        status: 404
