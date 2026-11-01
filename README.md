@@ -64,6 +64,93 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Upstart is a company surfaced as a portfolio company of first-round-capital, gv, khosla-ventures and added to the API Evangelist network as a stub for enrichment. Sector: fintech. This profile is a lead awaiting the enrichment pipeline.
+Upstart is an AI lending marketplace (NASDAQ: UPST) that connects consumers with banks and credit unions, using AI-driven underwriting models to price credit beyond traditional FICO-based scoring. The marketplace offers personal loans, car loan refinancing, debt consolidation, home equity lines of credit, and short-term relief loans - loans are originated by regulated bank and credit-union partners, including lender-branded powered-by-Upstart sites. Upstart's API surface is partner-facing rather than public: a Reporting API for lending partners is operated at api.upstart.com and publicly tracked on status.upstart.com, but no public developer portal or API documentation is published.
 
-Backed by: first-round-capital, gv, khosla-ventures — https://www.upstart.com
+**Areas:** Company · Fintech · Lending · Credit · Artificial Intelligence · Personal Loans · Banking · Marketplace
+
+## Upstart on APIs.io
+
+Everything profiled for Upstart is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/upstart/](https://apis.io/providers/upstart/)** — or go straight to one of the APIs or properties below.
+
+### APIs (1)
+
+- [Upstart Reporting API](https://apis.io/apis/upstart/upstart-reporting-api/) — Partner-facing reporting API for Upstart's bank and credit-union lending partners. Not publicly documented - its existence and availability are publicly…
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (3)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Upstart Domain Security](https://apis.io/security/upstart/upstart-domain-security/)
+- [Upstart Trust Center](https://apis.io/security/upstart/upstart-trust-center/)
+- [Upstart Vulnerability Disclosure](https://apis.io/security/upstart/upstart-vulnerability-disclosure/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.upstart.com)
+- [Support](https://upstarthelp.upstart.com/)
+- [Blog](https://www.upstart.com/news)
+- [Security](https://www.upstart.com/lenders/regulatory-compliance/vulnerability-reporting/)
+- [Trust centre](https://trust.upstart.com/)
+- [Terms of service](https://www.upstart.com/terms)
+- [Privacy policy](https://www.upstart.com/privacy_policy)
+- [GitHub](https://github.com/teamupstart)
+- [Status](https://status.upstart.com)
+
+## API Evangelist rating
+
+**Kin Score 18.3** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 73.2 |
+| Contract quality | 0.0 |
+| Contract governance | 4.5 |
+| Operational transparency | 28.9 |
+| Developer ergonomics | 7.1 |
+| Access clarity | 27.6 |
+
+**Agent readiness 0.0** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 18.5** — Banking & Open Finance
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/upstart/](https://apis.io/providers/upstart/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Upstart: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/upstart/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
